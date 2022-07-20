@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Clock</title>
+  </head>
+  <body>
+    <h1>JS Clock</h1>
+
+    <div id="clock"></div>
+  </body>
+
+  <script>
+    function doDate() {
+      let date = new Date();
+      let currentTime = date.toLocaleString();
+      document.getElementById("clock").innerHTML = currentTime;
+    }
+
+    setInterval(doDate, 1000);
+  </script>
+</html>
